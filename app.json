@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "NutriHub",
+    "slug": "NutriHub",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "NutriHub"
+}
