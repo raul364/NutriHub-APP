@@ -4,17 +4,18 @@ import { TouchableWithoutFeedback,
   View,
   SafeAreaView } from 'react-native';
 
-import { Icon,
+import {Icon,
   Input,
   Text,
   Button,
-  useTheme, } from '@ui-kitten/components';
+  useTheme,
+  } from '@ui-kitten/components';
 
 
 import Colours from '../config/colours';
 import BackgroundStyle from '../backgroundStyle';
 
-const AlertIcon = (props) => (
+export const AlertIcon = (props) => (
   <Icon {...props} name='alert-circle-outline'/>
 );
 

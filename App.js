@@ -15,13 +15,12 @@ import * as eva from '@eva-design/eva';
 import { ApplicationProvider, IconRegistry, Layout, Text } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { default as theme } from './app/config/custom-theme.json'; 
-import { MCIPack } from './mci-icons';
+import { MaterialCommunityIconsPack } from './mci-icons';
 
 
 export default () =>{
   return(<>
-    <IconRegistry icons={EvaIconsPack} />
-    <IconRegistry icons={MCIPack}/>
+    <IconRegistry icons={[EvaIconsPack, MaterialCommunityIconsPack]} />
     <ApplicationProvider {...eva} theme={{...eva.dark, ...theme}} >
       <MyScreens/>
     </ApplicationProvider>

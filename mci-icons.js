@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-export const MCIPack = {
-  name: 'MCI',
+export const MaterialCommunityIconsPack = {
+  name: 'MaterialCommunity',
   icons: createIconsMap(),
 };
 
@@ -16,10 +16,10 @@ function createIconsMap() {
 }
 
 const IconProvider = (name) => ({
-  toReactElement: (props) => MCIcon({ name, ...props }),
+  toReactElement: (props) => MaterialCommunityIcon({ name, ...props }),
 });
 
-function MCIcon({ name, style }) {
+function MaterialCommunityIcon({ name, style }) {
   const { height, tintColor, ...iconStyle } = StyleSheet.flatten(style);
   return (
     <Icon name={name} size={height} color={tintColor} style={iconStyle} />
